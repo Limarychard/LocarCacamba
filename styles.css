@@ -102,6 +102,13 @@ nav {
     color: #0019FF;
 }
 
+.circle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #0019FF; 
+}
+
 h1 {
     text-align: center;
     color: #0019FF;
