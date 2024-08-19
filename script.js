@@ -19,7 +19,7 @@ function mostrarTexto(idTexto) {
     botaoSelecionado.classList.add('selected');
 }
 
-var zap_telefone = '5511940056695';
+var zap_telefone = '5521986246466';
 var zap_mensagem = '';
 var zap_exibirPulsar = eval(('True').toLowerCase());
 var zap_apresentarContato = eval(('True').toLowerCase());
