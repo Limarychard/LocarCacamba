@@ -1,44 +1,50 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho do elemento */
+    box-sizing: border-box;
     max-width: 100%;
 }
 
 body {
-    overflow-x: hidden; /* Impede o scroll horizontal no corpo da página */
+    background-color: #000; /* Fundo preto para o corpo da página */
+    color: #FFD700; /* Texto amarelo */
+    overflow-x: hidden;
 }
 
 nav {
     height: 100px;
+    background-color: #000; /* Fundo preto para o nav */
+}
+
+.carousel {
+    border: 1px solid #FFD700;
 }
 
 @media (min-width: 1600px) {
     .carousel {
-        overflow: hidden; /* Impede o scroll horizontal dentro do carrossel */
+        overflow: hidden;
         width: 100%;
     }
-    
+
     .carousel-inner #img-one {
         margin-top: -400px;
     }
-    
+
     .carousel-inner #img-two {
         margin-top: -500px;
     }
-    
+
     .carousel-inner #img-three {
         margin-top: -200px;
     }
-    
+
     .carousel-inner {
-        height: 400px; /* Altura fixa do carrossel */
+        height: 400px;
     }
-    
+
     .carousel-item {
-        width: 100%; /* Ajusta a largura dos itens do carrossel para cobrir a largura total */
+        width: 100%;
     }
-    
 }
 
 .about {
@@ -48,12 +54,13 @@ nav {
 
 .quem-somos-container {
     width: 90%;
-    height: auto; /* Ajusta a altura automaticamente ao conteúdo */
-    margin: 50px auto; /* Centraliza a div horizontalmente */
+    height: auto;
+    margin: 50px auto;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: justify;
-    background-color: white;
+    background-color: #000; /* Fundo preto */
+    color: #FFD700; /* Texto amarelo */
 }
 
 /* Estilos para telas maiores que 670px */
@@ -66,13 +73,13 @@ nav {
 
 .quem-somos-container h1 {
     text-align: center;
-    color: #0019FF;
+    color: #FFD700; /* Título amarelo */
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .quem-somos-container p {
-    color: black;
+    color: #FFD700; /* Texto amarelo */
     line-height: 1.6;
     font-size: 130%;
 }
@@ -89,36 +96,63 @@ nav {
 }
 
 .testimonials {
-    color: #5565FA;
+    color: #FFD700; /* Texto amarelo */
 }
 
 .card {
     border-radius: 20px;
-    color: black;
-    border: 2px solid #0019FF;
+    color: #FFD700; /* Texto amarelo */
+    border: 2px solid #FFD700; /* Borda amarela */
+    background-color: #000; /* Fundo preto */
 }
 
 .card-title {
-    color: #0019FF;
+    color: #FFD700; /* Título amarelo */
 }
 
 .circle {
     width: 100px;
     height: 100px;
-    border: 1px solid #0019FF; 
+    border: 1px solid #FFD700; /* Borda amarela */
 }
 
 h1 {
     text-align: center;
-    color: #0019FF;
+    color: #FFD700; /* Título amarelo */
 }
 
 .Commonquestions {
     display: flex;
-    justify-content: space-between; /* Espaça o botão e o texto */
+    justify-content: space-between;
     align-items: center;
-    margin-top: 20px; /* Espaço acima do bloco de perguntas */
+    margin-top: 20px;
 }
+
+.accordion-button:not(.collapsed) {
+    background-color: #FFD700; /* Fundo amarelo */
+    color: #000; /* Texto preto */
+}
+
+.accordion-button {
+    background-color: #000; /* Fundo preto */
+    color: #FFD700; /* Texto amarelo */
+    border: 1px solid #FFD700; /* Borda amarela */
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.5); /* Sombra de foco amarela */
+}
+
+.accordion-item {
+    background-color: #000; /* Fundo preto para o item do accordion */
+    border: 1px solid #FFD700; /* Borda amarela */
+}
+
+.accordion-body {
+    background-color: #000; /* Fundo preto */
+    color: #FFD700; /* Texto amarelo */
+}
+
 
 @media (min-width: 670px) {
     .accordion {
@@ -129,52 +163,53 @@ h1 {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #FFD700; /* Fundo amarelo */
+    color: #000; /* Texto preto */
     padding: 20px 0;
     text-align: center;
     margin-top: 10px;
 }
 
-footer h1 {
+footer h1,
+footer p {
+    color: #000; /* Texto preto */
     text-align: left;
 }
 
-footer p {
-    text-align: left;
-    font-size: small;
-}
-.social-icons {
-    margin-bottom: 10px;
-}
 .social-icons a {
     display: inline-block;
     margin: 0 10px;
-    color: #fff;
+    color: #000; /* Texto preto */
     font-size: 24px;
     transition: color 0.3s ease;
 }
+
 .social-icons a:hover {
-    color: #55acee; /* Cor do Twitter para exemplo */
+    color: #333; /* Cor de hover mais escura para contraste */
 }
+
+
 .logo {
     display: block;
     margin: 0 auto;
     max-width: 150px;
     margin-top: 10px;
 }
+
 .align-middle {
     vertical-align: middle !important;
 }
 
 .btnZap {
     position: fixed;
-    left:20px; bottom:20px; z-index: 999999999;
+    left: 20px;
+    bottom: 20px;
+    z-index: 999999999;
 }
 
-    .btnZap:hover {
-        cursor: pointer;
-    }
+.btnZap:hover {
+    cursor: pointer;
+}
 
 @keyframes whatsapp-anim {
     0% {
