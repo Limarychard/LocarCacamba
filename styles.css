@@ -50,6 +50,9 @@ nav {
 .about {
     max-width: 100%;
     max-height: 100%;
+    background-color: #fff; /* Fundo branco */
+    color: #000; /* Texto preto */
+    padding: 20px;
 }
 
 .quem-somos-container {
@@ -59,8 +62,8 @@ nav {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: justify;
-    background-color: #000; /* Fundo preto */
-    color: #FFD700; /* Texto amarelo */
+    background-color: #fff; /* Fundo branco */
+    color: #000; /* Texto preto */
 }
 
 /* Estilos para telas maiores que 670px */
@@ -73,13 +76,13 @@ nav {
 
 .quem-somos-container h1 {
     text-align: center;
-    color: #FFD700; /* Título amarelo */
+    color: #000; /* Título preto */
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .quem-somos-container p {
-    color: #FFD700; /* Texto amarelo */
+    color: #000; /* Texto preto */
     line-height: 1.6;
     font-size: 130%;
 }
@@ -129,13 +132,13 @@ h1 {
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #FFD700; /* Fundo amarelo */
+    background-color: #FFD700; /* Fundo amarelo quando expandido */
     color: #000; /* Texto preto */
+    border-color: #FFD700; /* Borda amarela */
 }
 
 .accordion-button {
-    background-color: #000; /* Fundo preto */
-    color: #FFD700; /* Texto amarelo */
+    background-color: #fff; /* Fundo branco */
     border: 1px solid #FFD700; /* Borda amarela */
 }
 
@@ -144,15 +147,18 @@ h1 {
 }
 
 .accordion-item {
-    background-color: #000; /* Fundo preto para o item do accordion */
     border: 1px solid #FFD700; /* Borda amarela */
 }
 
 .accordion-body {
-    background-color: #000; /* Fundo preto */
-    color: #FFD700; /* Texto amarelo */
+    background-color: #fff; /* Fundo branco para o conteúdo do accordion */
+    color: #000; /* Texto preto */
 }
 
+.accordion-button:hover {
+    background-color: #FFD700; /* Fundo amarelo no hover */
+    color: #000; /* Texto preto */
+}
 
 @media (min-width: 670px) {
     .accordion {
